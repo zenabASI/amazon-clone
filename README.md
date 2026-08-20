@@ -5,7 +5,6 @@ A responsive, static recreation of the Amazon product page for **Atomic Habits b
 ## Project links
 
 - Student: zenab asi
-- Original Amazon product: [Atomic Habits on Amazon](https://www.amazon.com/Atomic-Habits-Proven-Build-Break/dp/0735211299)
 - Live GitHub Pages site: [https://zenabasi.github.io/amazon-clone/](https://zenabasi.github.io/amazon-clone/)
 
 
