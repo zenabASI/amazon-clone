@@ -1,0 +1,315 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="An educational HTML and CSS recreation of the Amazon Audible product page for Atomic Habits."
+    />
+    <title>Atomic Habits Audiobook - Amazon Page Clone</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="amazon-header">
+        <a class="amazon-logo" href="#" aria-label="Amazon home">amazon</a>
+
+        <a class="delivery-tile header-hover" href="#">
+          <span class="pin-icon" aria-hidden="true"></span>
+          <span><small>Deliver to</small><strong>Israel</strong></span>
+        </a>
+
+        <form class="search-bar" action="#" role="search">
+          <label class="sr-only" for="search-category">Search category</label>
+          <select id="search-category" name="category">
+            <option>Audible Books &amp; Originals</option>
+          </select>
+          <label class="sr-only" for="site-search">Search Amazon</label>
+          <input
+            id="site-search"
+            name="search"
+            type="search"
+            value="atomic habits"
+            aria-label="Search Amazon"
+          />
+          <button type="submit" aria-label="Search">
+            <span class="search-icon" aria-hidden="true"></span>
+          </button>
+        </form>
+
+        <a class="language-tile header-hover" href="#"
+          ><span aria-hidden="true">🇺🇸</span><strong>EN</strong
+          ><span class="down-caret">▾</span></a
+        >
+        <a class="account-tile header-hover" href="#"
+          ><small>Hello, sign in</small
+          ><strong>Account &amp; Lists <span>▾</span></strong></a
+        >
+        <a class="orders-tile header-hover" href="#"
+          ><small>Returns</small><strong>&amp; Orders</strong></a
+        >
+        <a class="cart-tile header-hover" href="#"
+          ><span class="cart-symbol" aria-hidden="true">🛒</span
+          ><span class="cart-count">0</span><strong>Cart</strong></a
+        >
+      </div>
+
+      <nav class="amazon-nav" aria-label="Amazon navigation">
+        <a class="all-link" href="#"><span aria-hidden="true">☰</span> All</a>
+        <a href="#">Today's Deals</a>
+        <a href="#">Prime Video</a>
+        <a href="#">Customer Service</a>
+        <a href="#">Gift Cards</a>
+        <a href="#">Sell</a>
+        <a href="#">Registry</a>
+      </nav>
+    </header>
+
+    <nav class="audible-nav" aria-label="Audible navigation">
+      <a class="audible-logo" href="#" aria-label="Audible home"
+        >audible<span aria-hidden="true">)))</span></a
+      >
+      <span class="audible-divider" aria-hidden="true"></span>
+      <a href="#">Audible Membership</a>
+      <a href="#">Audiobook Deals</a>
+      <a href="#">Now Trending</a>
+      <a href="#">Categories</a>
+      <a href="#">More to Explore</a>
+      <a class="settings-link" href="#">Settings</a>
+    </nav>
+
+    <main>
+      <section
+        class="international-banner"
+        aria-label="International shopping notice"
+      >
+        <span class="banner-truck" aria-hidden="true">♙—▱—♙</span>
+        <span>Shop top categories that ship internationally</span>
+      </section>
+
+      <div class="page-shell">
+        <nav class="breadcrumbs" aria-label="Breadcrumb">
+          <a href="#">Audible Books &amp; Originals</a><span>›</span>
+          <a href="#">Health &amp; Wellness</a><span>›</span>
+          <a href="#">Psychology &amp; Mental Health</a><span>›</span>
+          <a href="#">Psychology</a><span>›</span>
+          <span aria-current="page">Social Psychology &amp; Interactions</span>
+        </nav>
+
+        <section class="product-grid" aria-labelledby="product-title">
+          <aside class="cover-column" aria-label="Audiobook cover and preview">
+            <div class="cover-viewport">
+              <img
+                class="cover-image"
+                src="images/atomic-audio-cover.jpg"
+                alt="Atomic Habits audiobook cover by James Clear"
+              />
+              <button
+                class="share-button"
+                type="button"
+                aria-label="Share this product"
+              >
+                ↥
+              </button>
+            </div>
+            <a class="full-view-link" href="#">Click to see full view</a>
+            <button class="preview-button" type="button">
+              <span aria-hidden="true">▶</span> Preview
+            </button>
+          </aside>
+
+          <article class="product-copy">
+            <h1 id="product-title">
+              Atomic Habits: An Easy &amp; Proven Way to Build Good Habits &amp;
+              Break Bad Ones
+            </h1>
+
+            <p class="creator-line">
+              <a href="#">James Clear</a> <span>(Author, Narrator)</span>,
+              <a href="#">Penguin Audio</a> <span>(Publisher)</span>
+              <span class="vertical-rule" aria-hidden="true"></span>
+              <span>Format: <strong>Audible Audiobook</strong></span>
+            </p>
+
+            <div class="rating-row">
+              <span>4.8</span>
+              <a class="stars" href="#" aria-label="4.8 out of 5 stars"
+                >★★★★★<span class="rating-caret">⌄</span></a
+              >
+              <a href="#">(149,486)</a>
+            </div>
+
+            <div class="chart-row">
+              <a class="chart-badge" href="#">Amazon Charts</a>
+              <a href="#">#4 this week</a>
+            </div>
+
+            <div class="formats-heading">
+              <span></span>
+              <a href="#">See all formats and editions</a>
+            </div>
+
+            <section
+              class="editorial-description"
+              aria-label="Audiobook description"
+            >
+              <p>
+                <strong
+                  >The <em>#1 New York Times</em> bestseller.<br />Over 25
+                  million copies sold!<br />Translated into 60+
+                  languages!</strong
+                >
+              </p>
+              <h2><em>Tiny Changes, Remarkable Results</em></h2>
+              <p>
+                No matter your goals, <em>Atomic Habits</em> offers a proven
+                framework for improving--every day. James Clear, one of the
+                world's leading experts on habit formation, reveals practical
+                strategies that will teach you exactly how to form good habits,
+                break bad ones, and master the tiny behaviors that lead to
+                remarkable results.
+              </p>
+              <p>
+                If you're having trouble changing your habits, the problem isn't
+                you. The problem is your system. Bad habits repeat themselves
+                again and again not because you don't want to change, but
+                because you have the wrong system for change. You do not rise to
+                the level of your goals. You fall to the level of your systems.
+                Here, you'll get a proven system that can take you to new
+                heights.
+              </p>
+              <a class="read-more" href="#"
+                ><span aria-hidden="true">⌄</span> Read more</a
+              >
+            </section>
+          </article>
+
+          <aside
+            class="purchase-rail"
+            aria-label="Formats and Audible membership offer"
+          >
+            <section class="format-selector" aria-label="Available formats">
+              <a class="format-card" href="#"
+                ><span>Kindle</span><strong>$12.99</strong
+                ><small>Available instantly</small></a
+              >
+              <a class="format-card active" href="#"
+                ><span><b class="audible-mark">)))</b> Audiobook</span
+                ><strong>$0.00</strong><small>with membership trial</small></a
+              >
+              <a class="format-card" href="#"
+                ><span>Hardcover</span><strong>$18.88</strong></a
+              >
+              <a class="format-card" href="#"
+                ><span>Paperback</span><strong>from $34.99</strong></a
+              >
+              <a class="used-formats" href="#"
+                >Other Used, New, Collectible from $6.80
+                <span aria-hidden="true">⌄</span></a
+              >
+            </section>
+
+            <section class="membership-box">
+              <div class="recommend-row">
+                <span>Recommended For You</span
+                ><span class="selected-dot" aria-hidden="true"></span>
+              </div>
+              <h2>Free with 30-day Audible Standard trial</h2>
+              <p class="trial-price" aria-label="zero dollars">
+                <sup>$</sup><span>0</span><sup>00</sup>
+              </p>
+              <button class="trial-button" type="button">Try for $0.00</button>
+              <ul>
+                <li>Auto-renews at $8.99 /mo after 30 days. Cancel anytime.</li>
+              </ul>
+              <a href="#">Learn more about membership</a>
+              <p class="sold-by">
+                Sold and delivered by Audible, an Amazon company
+              </p>
+            </section>
+          </aside>
+        </section>
+
+        <section class="below-section" aria-labelledby="about-heading">
+          <h2 id="about-heading">About this item</h2>
+          <ul>
+            <li>
+              <strong>Practical and proven:</strong> James Clear explains how
+              tiny, repeatable improvements compound into remarkable results.
+            </li>
+            <li>
+              <strong>Read by the author:</strong> this unabridged audiobook is
+              narrated by James Clear.
+            </li>
+            <li>
+              <strong>A complete habit system:</strong> learn to make good
+              habits obvious, attractive, easy and satisfying.
+            </li>
+            <li>
+              <strong>Useful in everyday life:</strong> apply the framework to
+              work, health, learning and relationships.
+            </li>
+          </ul>
+        </section>
+
+        <section
+          class="below-section details-section"
+          aria-labelledby="details-heading"
+        >
+          <h2 id="details-heading">Product details</h2>
+          <div class="details-grid">
+            <table>
+              <tbody>
+                <tr>
+                  <th scope="row">Listening Length</th>
+                  <td>5 hours and 35 minutes</td>
+                </tr>
+                <tr>
+                  <th scope="row">Author</th>
+                  <td>James Clear</td>
+                </tr>
+                <tr>
+                  <th scope="row">Narrator</th>
+                  <td>James Clear</td>
+                </tr>
+                <tr>
+                  <th scope="row">Version</th>
+                  <td>Unabridged</td>
+                </tr>
+              </tbody>
+            </table>
+            <table>
+              <tbody>
+                <tr>
+                  <th scope="row">Publication date</th>
+                  <td>October 16, 2018</td>
+                </tr>
+                <tr>
+                  <th scope="row">Language</th>
+                  <td>English</td>
+                </tr>
+                <tr>
+                  <th scope="row">Publisher</th>
+                  <td>Penguin Audio</td>
+                </tr>
+                <tr>
+                  <th scope="row">ASIN</th>
+                  <td>B07RFSSYBH</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <a href="#">Back to top</a>
+      <p>
+        This educational clone is not affiliated with Amazon, Audible, James
+        Clear or Penguin Audio.
+      </p>
+    </footer>
+  </body>
+</html>
