@@ -4,9 +4,7 @@
 - Original Amazon product: [Atomic Habits Audible Audiobook on Amazon](https://www.amazon.com/dp/B07RFSSYBH/)
 - Live GitHub Pages site: **Add your published URL here**
 
-## Screenshot
 
-![Amazon clone screenshot](screenshot.jpg)
 
 ## What was challenging
 
