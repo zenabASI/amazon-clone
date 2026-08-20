@@ -1,302 +1,213 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta
       name="description"
-      content="An educational HTML and CSS recreation of the Amazon Audible product page for Atomic Habits."
-    />
-    <title>Atomic Habits Audiobook - Amazon Page Clone</title>
-    <link rel="stylesheet" href="css/style.css" />
+      content="A static HTML and CSS recreation of the Amazon product page for Atomic Habits by James Clear."
+    >
+    <title>Atomic Habits - Amazon Product Page Clone</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="site-header">
-      <div class="amazon-header">
-        <a class="amazon-logo" href="#" aria-label="Amazon home">amazon</a>
+      <div class="header-main">
+        <a class="amazon-logo" href="#" aria-label="Amazon home">
+          <span>amazon</span><small>.com</small>
+        </a>
 
-        <a class="delivery-tile header-hover" href="#">
-          <span class="pin-icon" aria-hidden="true"></span>
+        <a class="deliver-link header-tile" href="#">
+          <span class="location-icon" aria-hidden="true">●</span>
           <span><small>Deliver to</small><strong>Israel</strong></span>
         </a>
 
         <form class="search-bar" action="#" role="search">
           <label class="sr-only" for="search-category">Search category</label>
           <select id="search-category" name="category">
-            <option>Audible Books &amp; Originals</option>
+            <option>All</option>
+            <option>Books</option>
+            <option>Self-Help</option>
           </select>
           <label class="sr-only" for="site-search">Search Amazon</label>
-          <input
-            id="site-search"
-            name="search"
-            type="search"
-            value="atomic habits"
-            aria-label="Search Amazon"
-          />
-          <button type="submit" aria-label="Search">
-            <span class="search-icon" aria-hidden="true"></span>
-          </button>
+          <input id="site-search" name="search" type="search" placeholder="Search Amazon">
+          <button type="submit" aria-label="Search">⌕</button>
         </form>
 
-        <a class="language-tile header-hover" href="#"
-          ><span aria-hidden="true">🇺🇸</span><strong>EN</strong
-          ><span class="down-caret">▾</span></a
-        >
-        <a class="account-tile header-hover" href="#"
-          ><small>Hello, sign in</small
-          ><strong>Account &amp; Lists <span>▾</span></strong></a
-        >
-        <a class="orders-tile header-hover" href="#"
-          ><small>Returns</small><strong>&amp; Orders</strong></a
-        >
-        <a class="cart-tile header-hover" href="#"
-          ><span class="cart-symbol" aria-hidden="true">🛒</span
-          ><span class="cart-count">0</span><strong>Cart</strong></a
-        >
+        <a class="language-link header-tile" href="#"><strong>🇺🇸 EN</strong><span>▾</span></a>
+        <a class="account-link header-tile" href="#"><small>Hello, sign in</small><strong>Account &amp; Lists ▾</strong></a>
+        <a class="orders-link header-tile" href="#"><small>Returns</small><strong>&amp; Orders</strong></a>
+        <a class="cart-link header-tile" href="#"><span class="cart-icon" aria-hidden="true">🛒</span><strong>Cart</strong></a>
       </div>
 
-      <nav class="amazon-nav" aria-label="Amazon navigation">
-        <a class="all-link" href="#"><span aria-hidden="true">☰</span> All</a>
+      <nav class="nav-strip" aria-label="Main navigation">
+        <a class="all-menu" href="#"><span aria-hidden="true">☰</span> All</a>
         <a href="#">Today's Deals</a>
-        <a href="#">Prime Video</a>
         <a href="#">Customer Service</a>
+        <a href="#">Registry</a>
         <a href="#">Gift Cards</a>
         <a href="#">Sell</a>
-        <a href="#">Registry</a>
+        <a href="#">Prime</a>
+        <a href="#">Books</a>
+        <a href="#">Amazon Basics</a>
       </nav>
     </header>
 
-    <nav class="audible-nav" aria-label="Audible navigation">
-      <a class="audible-logo" href="#" aria-label="Audible home"
-        >audible<span aria-hidden="true">)))</span></a
-      >
-      <span class="audible-divider" aria-hidden="true"></span>
-      <a href="#">Audible Membership</a>
-      <a href="#">Audiobook Deals</a>
-      <a href="#">Now Trending</a>
-      <a href="#">Categories</a>
-      <a href="#">More to Explore</a>
-      <a class="settings-link" href="#">Settings</a>
-    </nav>
-
     <main>
-      <section
-        class="international-banner"
-        aria-label="International shopping notice"
-      >
-        <span class="banner-truck" aria-hidden="true">♙—▱—♙</span>
-        <span>Shop top categories that ship internationally</span>
-      </section>
-
-      <div class="page-shell">
+      <div class="page-container">
         <nav class="breadcrumbs" aria-label="Breadcrumb">
-          <a href="#">Audible Books &amp; Originals</a><span>›</span>
-          <a href="#">Health &amp; Wellness</a><span>›</span>
-          <a href="#">Psychology &amp; Mental Health</a><span>›</span>
-          <a href="#">Psychology</a><span>›</span>
-          <span aria-current="page">Social Psychology &amp; Interactions</span>
+          <a href="#">Books</a><span>›</span>
+          <a href="#">Self-Help</a><span>›</span>
+          <a href="#">Personal Transformation</a><span>›</span>
+          <span aria-current="page">Atomic Habits</span>
         </nav>
 
-        <section class="product-grid" aria-labelledby="product-title">
-          <aside class="cover-column" aria-label="Audiobook cover and preview">
-            <div class="cover-viewport">
-              <img
-                class="cover-image"
-                src="images/atomic-audio-cover.jpg"
-                alt="Atomic Habits audiobook cover by James Clear"
-              />
-              <button
-                class="share-button"
-                type="button"
-                aria-label="Share this product"
-              >
-                ↥
+        <section class="product-layout" aria-labelledby="product-title">
+          <div class="product-gallery">
+            <div class="thumbnail-list" aria-label="Product image thumbnails">
+              <button class="thumbnail active" type="button" aria-label="View main product image">
+                <img src="images/atomic-main.jpg" alt="Atomic Habits hardcover front cover">
+              </button>
+              <button class="thumbnail" type="button" aria-label="View front image">
+                <img src="images/atomic-laws.jpg" alt="Atomic Habits four laws of behavior change">
+              </button>
+              <button class="thumbnail" type="button" aria-label="View side image">
+                <img src="images/atomic-quote.jpg" alt="Editorial quote about James Clear">
+              </button>
+              <button class="thumbnail" type="button" aria-label="View rear image">
+                <img src="images/atomic-joy.jpg" alt="Quote about finding a satisfying version of every habit">
+              </button>
+              <button class="thumbnail" type="button" aria-label="View feature image">
+                <img src="images/atomic-effective.jpg" alt="Quote about effective habits">
+              </button>
+              <button class="thumbnail" type="button" aria-label="View lifestyle image">
+                <img src="images/atomic-success.jpg" alt="Quote about success and daily habits">
               </button>
             </div>
-            <a class="full-view-link" href="#">Click to see full view</a>
-            <button class="preview-button" type="button">
-              <span aria-hidden="true">▶</span> Preview
-            </button>
-          </aside>
 
-          <article class="product-copy">
-            <h1 id="product-title">
-              Atomic Habits: An Easy &amp; Proven Way to Build Good Habits &amp;
-              Break Bad Ones
-            </h1>
+            <figure class="main-image-wrap">
+              <img class="main-product-image" src="images/atomic-main.jpg" alt="Atomic Habits hardcover book by James Clear">
+              <figcaption>Roll over image to zoom in</figcaption>
+            </figure>
+          </div>
 
-            <p class="creator-line">
-              <a href="#">James Clear</a> <span>(Author, Narrator)</span>,
-              <a href="#">Penguin Audio</a> <span>(Publisher)</span>
-              <span class="vertical-rule" aria-hidden="true"></span>
-              <span>Format: <strong>Audible Audiobook</strong></span>
-            </p>
+          <article class="product-info">
+            <h1 id="product-title">Atomic Habits: An Easy &amp; Proven Way to Build Good Habits &amp; Break Bad Ones</h1>
+            <p class="title-details">by <a class="brand-link" href="#">James Clear</a> <span>(Author)</span></p>
+            <p class="format-line">Format: <strong>Hardcover</strong></p>
 
             <div class="rating-row">
-              <span>4.8</span>
-              <a class="stars" href="#" aria-label="4.8 out of 5 stars"
-                >★★★★★<span class="rating-caret">⌄</span></a
-              >
-              <a href="#">(149,486)</a>
+              <a class="rating-link" href="#"><span>4.8</span><span class="stars" aria-label="4.8 out of 5 stars">★★★★★</span><span>⌄</span></a>
+              <a href="#">149,054 ratings</a>
+              <span class="divider" aria-hidden="true"></span>
+              <a href="#">Search this page</a>
             </div>
 
-            <div class="chart-row">
-              <a class="chart-badge" href="#">Amazon Charts</a>
-              <a href="#">#4 this week</a>
+            <p class="sales-note"><strong>10K+ bought</strong> in past month</p>
+
+            <div class="choice-row">
+              <span class="best-seller-badge">#1 Best Seller</span>
+              <span>in Personal Transformation</span>
             </div>
 
-            <div class="formats-heading">
-              <span></span>
-              <a href="#">See all formats and editions</a>
+            <div class="price-area">
+              <p class="discount">-49%</p>
+              <p class="price" aria-label="13 dollars and 79 cents"><sup>$</sup><span>13</span><sup>79</sup></p>
+              <p class="list-price">List Price: <s>$27.00</s></p>
             </div>
 
-            <section
-              class="editorial-description"
-              aria-label="Audiobook description"
-            >
-              <p>
-                <strong
-                  >The <em>#1 New York Times</em> bestseller.<br />Over 25
-                  million copies sold!<br />Translated into 60+
-                  languages!</strong
-                >
-              </p>
-              <h2><em>Tiny Changes, Remarkable Results</em></h2>
-              <p>
-                No matter your goals, <em>Atomic Habits</em> offers a proven
-                framework for improving--every day. James Clear, one of the
-                world's leading experts on habit formation, reveals practical
-                strategies that will teach you exactly how to form good habits,
-                break bad ones, and master the tiny behaviors that lead to
-                remarkable results.
-              </p>
-              <p>
-                If you're having trouble changing your habits, the problem isn't
-                you. The problem is your system. Bad habits repeat themselves
-                again and again not because you don't want to change, but
-                because you have the wrong system for change. You do not rise to
-                the level of your goals. You fall to the level of your systems.
-                Here, you'll get a proven system that can take you to new
-                heights.
-              </p>
-              <a class="read-more" href="#"
-                ><span aria-hidden="true">⌄</span> Read more</a
-              >
-            </section>
+            <p class="shipping-copy">FREE Returns <span class="caret">⌄</span></p>
+            <p class="shipping-copy">No Import Fees Deposit &amp; $12.18 Shipping to Israel <span class="caret">⌄</span></p>
+
+            <div class="prime-offer">
+              <span class="prime-logo">prime</span>
+              <span>Save with qualifying international orders</span>
+            </div>
+
+            <div class="variation-group">
+              <p><strong>See all formats and editions</strong></p>
+              <div class="variation-options">
+                <button class="variation" type="button"><span class="format-icon">Kindle</span><span>Kindle<br><strong>$12.99</strong></span></button>
+                <button class="variation active" type="button"><span class="format-icon">HC</span><span>Hardcover<br><strong>$13.79</strong></span></button>
+                <button class="variation" type="button"><span class="format-icon">PB</span><span>Paperback<br><strong>$15.34</strong></span></button>
+              </div>
+            </div>
+
+            <table class="quick-specs">
+              <tbody>
+                <tr><th scope="row">Print length</th><td>320 pages</td></tr>
+                <tr><th scope="row">Language</th><td>English</td></tr>
+                <tr><th scope="row">Publisher</th><td>Avery</td></tr>
+                <tr><th scope="row">Publication date</th><td>October 16, 2018</td></tr>
+                <tr><th scope="row">Dimensions</th><td>6.35 x 1.08 x 9.25 inches</td></tr>
+              </tbody>
+            </table>
           </article>
 
-          <aside
-            class="purchase-rail"
-            aria-label="Formats and Audible membership offer"
-          >
-            <section class="format-selector" aria-label="Available formats">
-              <a class="format-card" href="#"
-                ><span>Kindle</span><strong>$12.99</strong
-                ><small>Available instantly</small></a
-              >
-              <a class="format-card active" href="#"
-                ><span><b class="audible-mark">)))</b> Audiobook</span
-                ><strong>$0.00</strong><small>with membership trial</small></a
-              >
-              <a class="format-card" href="#"
-                ><span>Hardcover</span><strong>$18.88</strong></a
-              >
-              <a class="format-card" href="#"
-                ><span>Paperback</span><strong>from $34.99</strong></a
-              >
-              <a class="used-formats" href="#"
-                >Other Used, New, Collectible from $6.80
-                <span aria-hidden="true">⌄</span></a
-              >
+          <aside class="purchase-column" aria-label="Purchase options">
+            <section class="buy-box">
+              <p class="buy-price" aria-label="13 dollars and 79 cents"><sup>$</sup><span>13</span><sup>79</sup></p>
+              <p class="delivery"><a href="#">Delivery</a> <strong>Wednesday, September 2</strong> to Israel. Order within <span>9 hrs 42 mins</span></p>
+              <a class="delivery-location" href="#"><span aria-hidden="true">●</span> Deliver to Israel</a>
+              <p class="ships-israel"><strong>This item ships to Israel</strong></p>
+              <p class="stock">In Stock</p>
+
+              <label class="sr-only" for="quantity">Quantity</label>
+              <select class="quantity" id="quantity" name="quantity">
+                <option>Quantity: 1</option>
+                <option>Quantity: 2</option>
+                <option>Quantity: 3</option>
+              </select>
+
+              <button class="buy-button add-cart" type="button">Add to Cart</button>
+              <button class="buy-button buy-now" type="button">Buy Now</button>
+
+              <dl class="purchase-details">
+                <div><dt>Ships from</dt><dd>Amazon.com</dd></div>
+                <div><dt>Sold by</dt><dd>Amazon.com</dd></div>
+                <div><dt>Returns</dt><dd><a href="#">30-day refund or replacement</a></dd></div>
+                <div><dt>Payment</dt><dd><a href="#">Secure transaction</a></dd></div>
+              </dl>
+
+              <label class="gift-option"><input type="checkbox"> Add a gift receipt for easy returns</label>
+              <button class="list-button" type="button">Add to List</button>
             </section>
 
-            <section class="membership-box">
-              <div class="recommend-row">
-                <span>Recommended For You</span
-                ><span class="selected-dot" aria-hidden="true"></span>
-              </div>
-              <h2>Free with 30-day Audible Standard trial</h2>
-              <p class="trial-price" aria-label="zero dollars">
-                <sup>$</sup><span>0</span><sup>00</sup>
-              </p>
-              <button class="trial-button" type="button">Try for $0.00</button>
-              <ul>
-                <li>Auto-renews at $8.99 /mo after 30 days. Cancel anytime.</li>
-              </ul>
-              <a href="#">Learn more about membership</a>
-              <p class="sold-by">
-                Sold and delivered by Audible, an Amazon company
-              </p>
+            <section class="other-sellers">
+              <h2>Other sellers on Amazon</h2>
+              <div><span>New &amp; Used (41) from <strong>$8.64</strong></span><span aria-hidden="true">›</span></div>
             </section>
           </aside>
         </section>
 
-        <section class="below-section" aria-labelledby="about-heading">
+        <section class="below-section about-section" aria-labelledby="about-heading">
           <h2 id="about-heading">About this item</h2>
           <ul>
-            <li>
-              <strong>Practical and proven:</strong> James Clear explains how
-              tiny, repeatable improvements compound into remarkable results.
-            </li>
-            <li>
-              <strong>Read by the author:</strong> this unabridged audiobook is
-              narrated by James Clear.
-            </li>
-            <li>
-              <strong>A complete habit system:</strong> learn to make good
-              habits obvious, attractive, easy and satisfying.
-            </li>
-            <li>
-              <strong>Useful in everyday life:</strong> apply the framework to
-              work, health, learning and relationships.
-            </li>
+            <li><strong>Build a system for getting better:</strong> learn how tiny changes can produce remarkable long-term results.</li>
+            <li><strong>Make good habits easier:</strong> use practical strategies to design your environment and stay consistent.</li>
+            <li><strong>Break bad habits:</strong> understand the cues and rewards that keep unwanted behaviors in place.</li>
+            <li><strong>Focus on identity:</strong> connect daily actions with the person you want to become.</li>
+            <li><strong>A proven framework:</strong> apply the Four Laws of Behavior Change to work, health, learning and relationships.</li>
           </ul>
         </section>
 
-        <section
-          class="below-section details-section"
-          aria-labelledby="details-heading"
-        >
+        <section class="below-section product-details" aria-labelledby="details-heading">
           <h2 id="details-heading">Product details</h2>
           <div class="details-grid">
             <table>
               <tbody>
-                <tr>
-                  <th scope="row">Listening Length</th>
-                  <td>5 hours and 35 minutes</td>
-                </tr>
-                <tr>
-                  <th scope="row">Author</th>
-                  <td>James Clear</td>
-                </tr>
-                <tr>
-                  <th scope="row">Narrator</th>
-                  <td>James Clear</td>
-                </tr>
-                <tr>
-                  <th scope="row">Version</th>
-                  <td>Unabridged</td>
-                </tr>
+                <tr><th scope="row">Publisher</th><td>Avery</td></tr>
+                <tr><th scope="row">Publication date</th><td>October 16, 2018</td></tr>
+                <tr><th scope="row">Edition</th><td>First Edition</td></tr>
+                <tr><th scope="row">Language</th><td>English</td></tr>
               </tbody>
             </table>
             <table>
               <tbody>
-                <tr>
-                  <th scope="row">Publication date</th>
-                  <td>October 16, 2018</td>
-                </tr>
-                <tr>
-                  <th scope="row">Language</th>
-                  <td>English</td>
-                </tr>
-                <tr>
-                  <th scope="row">Publisher</th>
-                  <td>Penguin Audio</td>
-                </tr>
-                <tr>
-                  <th scope="row">ASIN</th>
-                  <td>B07RFSSYBH</td>
-                </tr>
+                <tr><th scope="row">Print length</th><td>320 pages</td></tr>
+                <tr><th scope="row">ISBN-10</th><td>0735211299</td></tr>
+                <tr><th scope="row">ISBN-13</th><td>978-0735211292</td></tr>
+                <tr><th scope="row">Item weight</th><td>1.13 pounds</td></tr>
               </tbody>
             </table>
           </div>
@@ -306,10 +217,8 @@
 
     <footer class="site-footer">
       <a href="#">Back to top</a>
-      <p>
-        This educational clone is not affiliated with Amazon, Audible, James
-        Clear or Penguin Audio.
-      </p>
+      <div><span class="footer-logo">amazon</span><span>English</span><span>Israel</span></div>
+      <p>This educational clone is not affiliated with Amazon, James Clear or the publisher.</p>
     </footer>
   </body>
 </html>

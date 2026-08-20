@@ -1,14 +1,18 @@
-# Amazon Audible Product Page Clone
+# Amazon Product Page Clone
 
--zeinab asi
-- Original Amazon product: [Atomic Habits Audible Audiobook on Amazon](https://www.amazon.com/dp/B07RFSSYBH/)
-- Live GitHub Pages site: **Add your published URL here**
+A responsive, static recreation of the Amazon product page for **Atomic Habits by James Clear**. The purchase area is localized for delivery to Israel.
+
+## Project links
+
+- Student: **aa**
+- Original Amazon product: [Atomic Habits on Amazon](https://www.amazon.com/Atomic-Habits-Proven-Build-Break/dp/0735211299)
+- Live GitHub Pages site: [https://zenabasi.github.io/amazon-clone/](https://zenabasi.github.io/amazon-clone/)
 
 
 
 ## What was challenging
 
-The most difficult part was matching the three very different product columns while keeping them responsive. The Amazon search bar and the separate Audible navigation also had to remain aligned without causing horizontal scrolling. The four format cards and the Audible membership panel were recreated with semantic HTML and reusable CSS. With more time, I would refine a few small icons and add more static audiobook imagery.
+The most difficult part was balancing the three very different product columns while keeping them responsive. The header search bar also needed to absorb the remaining width without pushing the account and cart links off screen. The book-format cards, raised price text and international buy box were recreated with semantic HTML and reusable CSS. With more time, I would add more mobile refinements and additional static image states.
 
 ## Project structure
 
@@ -18,7 +22,12 @@ amazon-clone/
 ├── css/
 │   └── style.css
 ├── images/
-│   └── atomic-audio-cover.jpg
+│   ├── atomic-main.jpg
+│   ├── atomic-laws.jpg
+│   ├── atomic-quote.jpg
+│   ├── atomic-joy.jpg
+│   ├── atomic-effective.jpg
+│   └── atomic-success.jpg
 ├── screenshot.jpg
 └── README.md
 ```
@@ -28,4 +37,4 @@ amazon-clone/
 - HTML and CSS only - no JavaScript.
 - No frameworks or templates.
 - All product images are stored locally in the `images/` folder.
-- This page is an educational exercise and is not affiliated with Amazon, Audible, James Clear or Penguin Audio.
+- This page is an educational exercise and is not affiliated with Amazon, James Clear or the publisher.
